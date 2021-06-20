@@ -34,6 +34,7 @@ WHEN a opção “Remover” é selecionada
 THEN uma mensagem de “ERRO” é mostrada 
 AND a ação é encerrada.
 
+
 (Questão 7 - D)
 Cenário: não há nenhuma discrepância
 Given estou na página de "auto avaliação"
