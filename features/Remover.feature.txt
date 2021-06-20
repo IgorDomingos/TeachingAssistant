@@ -32,3 +32,13 @@ Cenário: Tentar remover meta sem que haja alguma meta cadastrada
 GIVEN que não existe meta cadastrada no sistema
 WHEN a opção “Remover” é selecionada
 THEN uma mensagem de “ERRO” é mostrada. 
+
+(Questão 7 - D)
+Novo cenário:
+Scenario: não há nenhuma discrepância
+Given estou na página de "auto avaliação"
+When clico no botão para visualizar alunos com avaliações discrepantes
+Then verifico que "nenhum" não tem nenhum aluno com avaliações discrepantes
+And uma porcentagem de 0% de alunos com avaliações discrepantes
+And uma lista vazia de alunos
+
