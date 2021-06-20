@@ -2,3 +2,20 @@ Feature: Remover
 As a professor responsável pela sala
 I want to remover as metas cadastradas
 So that posso organizar as metas para cada turma
+
+CENÁRIOS:
+
+Cenário: Remover uma meta existente
+GIVEN que estou logado no sistema como professor 
+AND que estou na página “Metas de Aprendizado”
+AND que existe alguma meta de aprendizagem cadastrada
+WHEN eu clico em “Remover”
+THEN eu vejo uma nova página “Remover Metas” 
+AND seleciono a meta que desejo remover.
+
+Cenário: Tentar remover meta sem que haja alguma meta cadastrada
+GIVEN que estou logado no sistema como professor 
+AND que estou na página “Metas de Aprendizado”
+AND que não existe meta de aprendizagem cadastrada
+WHEN eu clico em “Remover”
+THEN eu vejo uma nova página “ERRO”, alertando que não existem metas para serem removidas. 
