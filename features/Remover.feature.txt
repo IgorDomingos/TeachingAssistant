@@ -31,4 +31,7 @@ AND a meta é removida do sistema
 Cenário: Tentar remover meta sem que haja alguma meta cadastrada
 GIVEN que não existe meta cadastrada no sistema
 WHEN a opção “Remover” é selecionada
-THEN uma mensagem de “ERRO” é mostrada. 
+THEN uma mensagem de “ERRO” é mostrada 
+AND a ação é encerrada.
+
+
