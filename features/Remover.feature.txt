@@ -1,0 +1,4 @@
+Feature: Remover
+As a professor responsável pela sala
+I want to remover as metas cadastradas
+So that posso organizar as metas para cada turma
