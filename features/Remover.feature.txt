@@ -31,14 +31,22 @@ AND a meta é removida do sistema
 Cenário: Tentar remover meta sem que haja alguma meta cadastrada
 GIVEN que não existe meta cadastrada no sistema
 WHEN a opção “Remover” é selecionada
-THEN uma mensagem de “ERRO” é mostrada. 
+THEN uma mensagem de “ERRO” é mostrada 
+AND a ação é encerrada.
 
 (Questão 7 - D)
-Novo cenário:
-Scenario: não há nenhuma discrepância
+Cenário: não há nenhuma discrepância
 Given estou na página de "auto avaliação"
 When clico no botão para visualizar alunos com avaliações discrepantes
 Then verifico que "nenhum" não tem nenhum aluno com avaliações discrepantes
 And uma porcentagem de 0% de alunos com avaliações discrepantes
 And uma lista vazia de alunos
+
+Cenário: conclusão bem-sucedida da autoavaliação
+Given que estou na página de "autoavaliação"
+And vejo que todos os objetivos foram avaliados
+When clico no botão enviar
+Then uma mensagem de sucesso é exibida, notificando que todas as avaliações foram enviadas
+
+
 
