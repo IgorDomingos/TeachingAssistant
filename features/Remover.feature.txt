@@ -20,6 +20,7 @@ AND que não existe meta de aprendizagem cadastrada
 WHEN eu clico em “Remover”
 THEN eu vejo uma nova página “ERRO”, alertando que não existem metas para serem removidas. 
 
+
 Cenários de serviço:
 
 Cenário: Remover uma meta existente
@@ -34,20 +35,6 @@ WHEN a opção “Remover” é selecionada
 THEN uma mensagem de “ERRO” é mostrada 
 AND a ação é encerrada.
 
-
-(Questão 7 - D)
-Cenário: não há nenhuma discrepância
-Given estou na página de "auto avaliação"
-When clico no botão para visualizar alunos com avaliações discrepantes
-Then verifico que "nenhum" não tem nenhum aluno com avaliações discrepantes
-And uma porcentagem de 0% de alunos com avaliações discrepantes
-And uma lista vazia de alunos.
-
-Cenário: conclusão bem-sucedida da autoavaliação
-Given que estou na página de "autoavaliação"
-And vejo que todos os objetivos foram avaliados
-When clico no botão enviar
-Then uma mensagem de sucesso é exibida, notificando que todas as avaliações foram enviadas.
 
 
 
